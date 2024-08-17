@@ -1,0 +1,128 @@
+/* Estilização Geral das páginas */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #555;
+    font-size: 2.2em;
+    margin-top: 30px;
+    font-weight: normal;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #666;
+}
+
+/* Container Principal */
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Botões */
+.button, .form-button, .back-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover, .form-button:hover, .back-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Navegação de Botões na Página Inicial */
+.container-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-group {
+    margin-top: 30px;
+}
+
+.button-group .button {
+    margin: 15px 10px;
+}
+
+/* Estilos do Formulário de Contato */
+form {
+    margin: 20px 0;
+}
+
+.form-input, .form-textarea {
+    width: 80%;
+    max-width: 600px;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.form-textarea {
+    height: 150px;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .form-input, .form-textarea {
+        width: 95%;
+    }
+}
